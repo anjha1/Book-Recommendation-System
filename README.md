@@ -4,53 +4,6 @@ This project is a web application that provides book recommendations to users. I
 1.  **Popularity-Based Recommendation:** Suggests books that are highly rated and have received a significant number of votes.
 2.  **Collaborative Filtering-Based Recommendation:** Takes a book title as input from the user and recommends similar books based on past user rating patterns and preferences.
 
-## Files and Directories
-
-*   `app.py`: The main Flask application file that runs the web interface and recommendation logic.
-*   `book_recommender_system.ipynb`: A Jupyter Notebook containing the code for data loading, preprocessing, analysis, and building the recommendation models.
-*   `popular.pkl`: A pickled Pandas DataFrame containing the top-rated books, used by the popularity-based recommender.
-*   `pt.pkl`: A pickled Pandas DataFrame representing the pivot table (user-book rating matrix) used in the collaborative filtering model.
-*   `books.pkl`: A pickled Pandas DataFrame containing the processed book data.
-*   `similarity_scores.pkl`: A pickled file containing the cosine similarity matrix used for collaborative filtering.
-*   `templates/`: This directory holds the HTML templates for the web application:
-    *   `index.html`: The main page that displays popular books.
-    *   `recommend.html`: The page where users can get personalized recommendations.
-*   `requirements.txt`: A text file listing all the Python dependencies required to run the project.
-*   `.gitignore`: Specifies intentionally untracked files that Git should ignore (e.g., environment files, IDE caches).
-*   `Procfile`: Declares the process types for application deployment, likely for platforms like Heroku.
-*   `Book Recommendation.pdf`: A PDF document, possibly a project report or presentation.
-*   `Project_template_AICTE.pptx`: A PowerPoint presentation, likely related to the project's proposal or documentation for AICTE.
-
-## How to Run the Project
-
-1.  **Prerequisites:**
-    *   Python 3.x
-    *   pip (Python package installer)
-
-2.  **Clone the Repository (if applicable):**
-    ```bash
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-
-3.  **Install Dependencies:**
-    Open your terminal or command prompt and navigate to the project's root directory. Then, install the required packages using:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    The key dependencies include:
-    *   Flask
-    *   pandas
-    *   numpy
-    *   scikit-learn (for `cosine_similarity`)
-
-4.  **Run the Flask Application:**
-    Once the dependencies are installed, you can start the web application by running:
-    ```bash
-    python app.py
-    ```
-    The application will typically start on `http://127.0.0.1:5000/` or `http://localhost:5000/`. Open this URL in your web browser to use the book recommender.
-
 ## Recommendation Systems Detailed
 
 ### 1. Popularity-Based Recommender
